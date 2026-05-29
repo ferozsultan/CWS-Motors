@@ -1,0 +1,403 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: WHITE;
+}
+
+body {
+    background-color: rgb(10, 10, 10);
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    background: transparent;
+    box-shadow: 10px 20px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+}
+
+.navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 2rem;
+    max-width: 1600px;
+}
+
+.navbar-container img {
+    width: 11rem;
+    /* border-radius: 50% */
+}
+
+.navLink {
+    display: flex;
+    text-align: center;
+    gap: 1.5rem;
+    list-style: none;
+}
+
+.navLink li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 500;
+    padding: 3px 20px;
+    border-radius: 20px;
+    border: 2px solid transparent;
+    transition: all 0.7s ease;
+    white-space: nowrap;
+}
+
+.navLink li a:hover {
+    color: wheat;
+    background-color: rgb(184, 36, 31);
+    border: 2px solid #fff;
+
+}
+
+.navbarToggel {
+    background: transparent;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background: rgb(247, 244, 244);
+    transition: all 0.3s ease-in-out;
+
+}
+
+@media (max-width:430px) {
+
+    .navbar-container {
+        padding: 0 1rem;
+        align-items: center;
+    }
+
+    .nav img {
+        width: 60px;
+    }
+
+    .navbar-container .nav-link {
+        font-size: 1.2rem;
+        padding: 3px 15px;
+        display: none;
+
+    }
+
+    ul {
+        display: none;
+    }
+
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: sticky;
+        top: 0px;
+        background-color: rgb(10, 10, 10);
+
+
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+        padding: 10px 20px;
+        border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .nav img {
+        width: 100px;
+        /* border-radius: 50%; */
+        /* margin-left: 20px; */
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        margin-right: 15px;
+        height: auto;
+    }
+
+    .nav-do-img img {
+        width: 120px;
+        height: 105px;
+        /* box-shadow: none; */
+
+    }
+
+    .navbar-container {
+        display: flex;
+        justify-content: space-between;
+        /* gap: 13rem; */
+        align-items: center;
+    }
+
+    .navbar-container .navLink {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.7rem !important;
+        position: fixed;
+        height: 100vh;
+        width: 80vw;
+        top: 0px;
+        right: 0px;
+        padding: 5rem 1.5rem;
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(10px);
+        background: rgba(10, 10, 10, 0.742);
+
+
+    }
+
+    .navbarToggel {
+        display: block;
+        z-index: 999;
+    }
+
+    .navbar-container .navLink.active {
+        display: flex;
+    }
+
+    .navbarToggel.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .navbarToggel.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .navbarToggel.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .main-hero-sec img {
+        width: 100%;
+        position: absolute;
+        object-fit: cover;
+        box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+
+    }
+
+    .main-hero-sec h1 {
+        font-size: 1.6rem;
+        position: relative;
+        /* top: 1rem; */
+        color: white;
+        padding: 1rem;
+        padding-top: 1.3rem;
+    }
+
+    .main-hero-sec h1 span {
+        color: red;
+        font-size: 1.7rem;
+        text-shadow: 1px 1px 2px black, 0 0 1em red;
+    }
+
+    .main-hero-sec p {
+        font-size: 1rem;
+        position: relative;
+        color: rgb(168, 168, 168);
+        padding: 1rem;
+
+    }
+
+    .main-hero-sec .btn {
+        position: relative;
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+        background-color: rgb(237, 19, 19);
+        color: white;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        align-items: center;
+        margin-left: 0.9rem;
+        box-shadow: rgba(255, 0, 0, 0.16) 0px 3px 6px, rgba(255, 0, 0, 0.23) 0px 3px 6px;
+        text-shadow: 1px 1px 2px red, 0 0 1em red;
+    }
+
+    .sec2 {
+        margin-top: 50px;
+    }
+
+    .sec2-cards {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        /* background-color: rgb(255, 0, 0); */
+        cursor: pointer;
+    }
+
+    .hero-sec-cards .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 70px;
+        height: auto;
+        /* background-color: rgb(237, 19, 19); */
+        background: rgba(255, 0, 0, 0.742);
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(10px);
+
+
+    }
+
+    .sec2-cards .card img {
+        width: 50px;
+        /* height: 60px; */
+
+    }
+
+    .card h1 {
+        font-size: 0.8rem;
+        color: rgb(226, 226, 226);
+        text-align: center;
+        padding: 0.5rem;
+    }
+
+    .card1 {
+        border-radius: 20px;
+        border: 1px solid rgb(151, 151, 151);
+        align-items: center;
+        text-align: center;
+    }
+    .card1 img{
+        width: 50px;
+    }
+
+    .sec3 {
+        margin-top: 30px;
+    }
+
+    .sec3-text {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        align-items: center;
+        padding: 15px;
+
+    }
+
+    .sec3-text h2 {
+        /* text-shadow: 0 0 10px rgb(255, 0, 0); */
+        text-shadow: 1px 1px 2px black, 0 0 1em blue;
+    }
+
+    .sec3-text p {
+        color: red;
+        text-shadow: 1px 1px 2px black, 0 0 1em red;
+
+    }
+
+    .sec3-main-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sec3-card {
+        width: 300px;
+        border-radius: 12px;
+        box-shadow: rgba(255, 255, 255, 0.25) 0px 54px 55px, rgba(255, 255, 255, 0.12) 0px -12px 30px, rgba(255, 255, 255, 0.12) 0px 4px 6px, rgba(255, 255, 255, 0.17) 0px 12px 13px, rgba(255, 255, 255, 0.09) 0px -3px 5px;
+        /* box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; */
+        margin-top: 25px;
+        margin-bottom: 13rem;
+
+    }
+
+    .sec3-card img {
+        width: 300px;
+        height: auto;
+        border-radius: 12px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        position: absolute;
+    }
+
+    .sec3-card h2 {
+        position: relative;
+        top: 240px;
+
+        color: red;
+        padding: 1rem;
+        text-shadow: 1px 1px 2px black, 0 0 1em red;
+        
+    }
+
+    .sec3-card h1 {
+        position: relative;
+        top: 210px;
+        color: white;
+        padding: 1rem;
+        text-shadow: 1px 1px 2px black, 0 0 1em rgb(255, 255, 255);
+    }
+
+    .sec3-card p {
+        position: relative;
+        top: 180px;
+        color: rgb(168, 168, 168);
+        padding: 1rem;
+        text-shadow: 1px 1px 2px black, 0 0 1em rgb(255, 255, 255);
+    }
+
+      .gsxr h2 {
+        position: relative;
+        top: 190px;
+
+        color: red;
+        padding: 1rem;
+        text-shadow: 1px 1px 2px black, 0 0 1em red;
+        
+    }
+
+    .gsxr h1 {
+        position: relative;
+        top: 155px;
+        color: white;
+        padding: 1rem;
+        text-shadow: 1px 1px 2px black, 0 0 1em rgb(255, 255, 255);
+    }
+
+    .gsxr p {
+        position: relative;
+        top: 125px;
+        color: rgb(168, 168, 168);
+        padding: 1rem;
+        text-shadow: 1px 1px 2px black, 0 0 1em rgb(255, 255, 255);
+    }
+    .hayabusa{
+        margin-top: 10px;
+    }
+    .hayabusa p{
+        top: 240px;
+    }
+    .hayabusa h2{
+        top: 300px;
+    }
+    .hayabusa h1{
+        top: 270px;
+    }
+    .mt15{
+        margin-top: 8rem;
+    }
+
+
+
+
+
+
+}
