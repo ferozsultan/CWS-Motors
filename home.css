@@ -395,6 +395,30 @@ body {
         margin-top: 8rem;
     }
 
+    .sec4 header h1{
+        text-shadow: 1px 1px 2px black, 0 0 1em rgb(249, 247, 247);
+        margin-top: 5rem;
+    }
+
+     .sec4-main-card{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 19.375rem;
+     }
+
+     .sec4-card{
+        width: 4.6583rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+     }
+     .sec4-card img{
+        width: 4.6583rem;
+        object-fit: cover;
+        /* position: absolute; */
+     }
 
 
 
