@@ -275,7 +275,8 @@ body {
         align-items: center;
         text-align: center;
     }
-    .card1 img{
+
+    .card1 img {
         width: 50px;
     }
 
@@ -335,7 +336,7 @@ body {
         color: red;
         padding: 1rem;
         text-shadow: 1px 1px 2px black, 0 0 1em red;
-        
+
     }
 
     .sec3-card h1 {
@@ -354,14 +355,14 @@ body {
         text-shadow: 1px 1px 2px black, 0 0 1em rgb(255, 255, 255);
     }
 
-      .gsxr h2 {
+    .gsxr h2 {
         position: relative;
         top: 190px;
 
         color: red;
         padding: 1rem;
         text-shadow: 1px 1px 2px black, 0 0 1em red;
-        
+
     }
 
     .gsxr h1 {
@@ -379,46 +380,88 @@ body {
         padding: 1rem;
         text-shadow: 1px 1px 2px black, 0 0 1em rgb(255, 255, 255);
     }
-    .hayabusa{
+
+    .hayabusa {
         margin-top: 10px;
     }
-    .hayabusa p{
+
+    .hayabusa p {
         top: 240px;
     }
-    .hayabusa h2{
+
+    .hayabusa h2 {
         top: 300px;
     }
-    .hayabusa h1{
+
+    .hayabusa h1 {
         top: 270px;
     }
-    .mt15{
+
+    .mt15 {
         margin-top: 8rem;
     }
 
-    .sec4 header h1{
-        text-shadow: 1px 1px 2px black, 0 0 1em rgb(249, 247, 247);
+    .sec4-email {
+        /* text-shadow: 1px 1px 2px black, 0 0 1em rgb(249, 247, 247); */
         margin-top: 5rem;
-    }
-
-     .sec4-main-card{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 19.375rem;
-     }
-
-     .sec4-card{
-        width: 4.6583rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-     }
-     .sec4-card img{
-        width: 4.6583rem;
-        object-fit: cover;
-        /* position: absolute; */
-     }
+    }
+
+    .sec4-email {
+        background-color: rgba(31, 31, 33, 0.686);
+        /* width: 310px; */
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        text-align: start;
+        border-radius: 12px;
+        margin-left: 12px;
+        margin-right: 12px;
+
+
+    }
+
+    .sec4-email h1 {
+        font-size: 1.3rem;
+        text-align: start;
+    }
+
+    .sec4-email p {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        color: gray;
+
+    }
+
+    .sec4-input {
+        display: flex;
+        justify-content: center;
+        gap: 0;
+    }
+
+    .sec4-input #email {
+        background-color: rgba(31, 31, 33, 0.686);
+        color: gray;
+        padding: 10px 25px;
+        padding-right: 35px;
+        border: none;
+
+    }
+
+    .sec4-input #submit {
+        background-color: rgb(193, 27, 27);
+        color: white;
+        padding: 10px 25px;
+        padding-right: 35px;
+        border: none;
+
+    }
+
 
 
 
