@@ -23,7 +23,7 @@ body {
     z-index: 1000;
 }
 
-.navbar-container {
+.navbar_container {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -32,7 +32,7 @@ body {
     max-width: 1600px;
 }
 
-.navbar-container img {
+.navbar_container img {
     width: 11rem;
     /* border-radius: 50% */
 }
@@ -83,7 +83,7 @@ body {
 
 @media (max-width:430px) {
 
-    .navbar-container {
+    .navbar_container {
         padding: 0 1rem;
         align-items: center;
     }
@@ -92,7 +92,7 @@ body {
         width: 60px;
     }
 
-    .navbar-container .nav-link {
+    .navbar_container .nav_link {
         font-size: 1.2rem;
         padding: 3px 15px;
         display: none;
@@ -127,21 +127,21 @@ body {
         height: auto;
     }
 
-    .nav-do-img img {
+    .nav_do_img img {
         width: 120px;
         height: 105px;
         /* box-shadow: none; */
 
     }
 
-    .navbar-container {
+    .navbar_container {
         display: flex;
         justify-content: space-between;
         /* gap: 13rem; */
         align-items: center;
     }
 
-    .navbar-container .navLink {
+    .navbar_container .navLink {
         display: none;
         flex-direction: column;
         align-items: flex-start;
@@ -165,7 +165,7 @@ body {
         z-index: 999;
     }
 
-    .navbar-container .navLink.active {
+    .navbar_container .navLink.active {
         display: flex;
     }
 
@@ -181,7 +181,7 @@ body {
         transform: translateY(-8px) rotate(-45deg);
     }
 
-    .main-hero-sec img {
+    .main_hero_sec img {
         width: 100%;
         position: absolute;
         object-fit: cover;
@@ -189,7 +189,7 @@ body {
 
     }
 
-    .main-hero-sec h1 {
+    .main_hero_sec h1 {
         font-size: 1.6rem;
         position: relative;
         /* top: 1rem; */
@@ -198,13 +198,13 @@ body {
         padding-top: 1.3rem;
     }
 
-    .main-hero-sec h1 span {
+    .main_hero_sec h1 span {
         color: red;
         font-size: 1.7rem;
         text-shadow: 1px 1px 2px black, 0 0 1em red;
     }
 
-    .main-hero-sec p {
+    .main_hero_sec p {
         font-size: 1rem;
         position: relative;
         color: rgb(168, 168, 168);
@@ -212,7 +212,7 @@ body {
 
     }
 
-    .main-hero-sec .btn {
+    .main_hero_sec .btn {
         position: relative;
         padding: 0.5rem 1rem;
         font-size: 0.9rem;
@@ -227,11 +227,13 @@ body {
         text-shadow: 1px 1px 2px red, 0 0 1em red;
     }
 
+    /* end of nav and hero section */
+
     .sec2 {
         margin-top: 50px;
     }
 
-    .sec2-cards {
+    .sec2_cards {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -240,7 +242,7 @@ body {
         cursor: pointer;
     }
 
-    .hero-sec-cards .card {
+    .hero_sec_cards .card {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -256,7 +258,7 @@ body {
 
     }
 
-    .sec2-cards .card img {
+    .sec2_cards .card img {
         width: 50px;
         /* height: 60px; */
 
@@ -280,11 +282,13 @@ body {
         width: 50px;
     }
 
+    /* end of section 2 */
+
     .sec3 {
         margin-top: 30px;
     }
 
-    .sec3-text {
+    .sec3_text {
         display: flex;
         justify-content: space-between;
         text-align: center;
@@ -293,25 +297,25 @@ body {
 
     }
 
-    .sec3-text h2 {
+    .sec3_text h2 {
         /* text-shadow: 0 0 10px rgb(255, 0, 0); */
         text-shadow: 1px 1px 2px black, 0 0 1em blue;
     }
 
-    .sec3-text p {
+    .sec3_text p {
         color: red;
         text-shadow: 1px 1px 2px black, 0 0 1em red;
 
     }
 
-    .sec3-main-card {
+    .sec3_main_card {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
 
-    .sec3-card {
+    .sec3_card {
         width: 300px;
         border-radius: 12px;
         box-shadow: rgba(255, 255, 255, 0.25) 0px 54px 55px, rgba(255, 255, 255, 0.12) 0px -12px 30px, rgba(255, 255, 255, 0.12) 0px 4px 6px, rgba(255, 255, 255, 0.17) 0px 12px 13px, rgba(255, 255, 255, 0.09) 0px -3px 5px;
@@ -321,7 +325,7 @@ body {
 
     }
 
-    .sec3-card img {
+    .sec3_card img {
         width: 300px;
         height: auto;
         border-radius: 12px;
@@ -329,7 +333,7 @@ body {
         position: absolute;
     }
 
-    .sec3-card h2 {
+    .sec3_card h2 {
         position: relative;
         top: 240px;
 
@@ -339,7 +343,7 @@ body {
 
     }
 
-    .sec3-card h1 {
+    .sec3_card h1 {
         position: relative;
         top: 210px;
         color: white;
@@ -347,7 +351,7 @@ body {
         text-shadow: 1px 1px 2px black, 0 0 1em rgb(255, 255, 255);
     }
 
-    .sec3-card p {
+    .sec3_card p {
         position: relative;
         top: 180px;
         color: rgb(168, 168, 168);
@@ -400,8 +404,9 @@ body {
     .mt15 {
         margin-top: 8rem;
     }
+    /* end of section 3 */
 
-    .sec4-email {
+    .sec4_email {
         /* text-shadow: 1px 1px 2px black, 0 0 1em rgb(249, 247, 247); */
         margin-top: 5rem;
         display: flex;
@@ -410,7 +415,7 @@ body {
         align-items: center;
     }
 
-    .sec4-email {
+    .sec4_email {
         background-color: rgba(31, 31, 33, 0.686);
         /* width: 310px; */
         padding: 20px;
@@ -426,25 +431,25 @@ body {
 
     }
 
-    .sec4-email h1 {
+    .sec4_email h1 {
         font-size: 1.3rem;
         text-align: start;
     }
 
-    .sec4-email p {
+    .sec4_email p {
         padding-top: 20px;
         padding-bottom: 20px;
         color: gray;
 
     }
 
-    .sec4-input {
+    .sec4_input {
         display: flex;
         justify-content: center;
         gap: 3px;
     }
 
-    .sec4-input #email {
+    .sec4_input #email {
         background-color: rgba(31, 31, 33, 0.686);
         color: gray;
         padding: 10px 0.5625rem;
@@ -454,7 +459,7 @@ body {
 
     }
 
-    .sec4-input #submit {
+    .sec4_input #submit {
         background-color: rgb(193, 27, 27);
         color: white;
         padding: 10px 0.5625rem;
@@ -463,6 +468,7 @@ body {
         border-radius: 15px;
 
     }
+    /* end of section 4 */
 
     .footer_text {
         padding: 20px;
