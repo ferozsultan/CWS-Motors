@@ -447,19 +447,79 @@ body {
     .sec4-input #email {
         background-color: rgba(31, 31, 33, 0.686);
         color: gray;
-        padding: 10px 25px;
-        padding-right: 35px;
+        padding: 10px 0.5625rem;
+        padding-right: 1rem;
         border: none;
+        border-radius: 15px;
 
     }
 
     .sec4-input #submit {
         background-color: rgb(193, 27, 27);
         color: white;
-        padding: 10px 25px;
-        padding-right: 35px;
+        padding: 10px 0.5625rem;
+        padding-right: 1rem;
         border: none;
+        border-radius: 15px;
 
+    }
+
+    .footer_text {
+        padding: 20px;
+        margin-bottom: 9rem;
+    }
+
+    .footer_text img {
+        width: 200px;
+        position: absolute;
+    }
+
+    .footer_text p {
+        position: relative;
+        top: 120px;
+        margin-top: 0;
+        color: gray;
+        padding-top: 10px;
+    }
+
+    .social_media {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+
+    }
+
+    .social_media a img {
+        width: 30px;
+    }
+
+    hr {
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+        color: rgb(255, 0, 0);
+        border-radius: 2rem;
+    }
+
+    .payment {
+        display: flex;
+        justify-content: space-between;
+        padding: 12px;
+    }
+
+    .payment_text h6 {
+        color: gray;
+        font-size: 0.8rem;
+    }
+
+    .payment_img {
+        display: flex;
+        justify-content: space-between;
+        gap: 0.7rem;
+    }
+
+    .payment_img img {
+        width: 20px;
+       box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     }
 
 
