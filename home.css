@@ -441,7 +441,7 @@ body {
     .sec4-input {
         display: flex;
         justify-content: center;
-        gap: 0;
+        gap: 3px;
     }
 
     .sec4-input #email {
